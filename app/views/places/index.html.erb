@@ -4,9 +4,7 @@
     <i><%= place.address %></i><br/><br/>
     <p><%= place.description %></p><br/>
 
-    <% if place.user.present? %>
-      <small><%= place.user.email %></small>
-    <% end %>
+    <!-- Chose not to show user's email addresses on a public site due to the security risk. -->
   </div>
 <% end %>
 
