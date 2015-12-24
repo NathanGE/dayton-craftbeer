@@ -34,6 +34,10 @@ gem 'jbuilder', '~> 1.2'
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.0.6'
 
+gem "geocoder"
+
+gem "figaro", ">= 1.0.0"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
