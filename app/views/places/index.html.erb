@@ -4,7 +4,19 @@
     <i><%= place.address %></i><br/><br/>
     <p><%= place.description %></p><br/>
 
-    <!-- Chose not to show user's email addresses on a public site due to the security risk. -->
+    <!-- NOTE: For user security, email will not be shown here -->
+
+    <% if place.comments.present? %>
+      <div class="col-xs-12">
+        <blockquote>
+          <% if place.comments.last.humanized_rating.present? %>
+            <b><%= place.comments.last.humanized_rating %></b> -
+          <% end %>
+          <%= place.comments.last.message %>
+          <!-- NOTE: For user security, email will not be shown here -->
+        </blockquote>
+      </div>
+    <% end %>
   </div>
 <% end %>
 
