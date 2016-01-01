@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cinzel);
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -12,6 +12,10 @@
   padding:20px;
 }
 
+h1 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin:0;
   padding:0;
@@ -19,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body{
   background: url('/assets/ricepaper_v3.png');
-  font-family: 'Cinzel', serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .navbar.navbar-inverse {
@@ -31,7 +35,7 @@ body{
 
 .navbar-inverse .navbar-brand {
   color: #F7F7DC;
-  font-family: 'Cinzel', serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .field_with_errors {
