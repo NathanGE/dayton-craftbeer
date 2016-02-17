@@ -44,6 +44,8 @@ gem 'carrierwave'
 
 gem "fog", "~> 1.3.1"
 
+gem 'rubocop', '~> 0.37.2', require: false
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
