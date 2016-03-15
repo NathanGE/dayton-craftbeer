@@ -44,7 +44,7 @@
     <i><%= place.address %></i><br/><br/>
     <p><%= place.description %></p><br/>
 
-    <!-- NOTE: For user security, email will not be shown here -->
+    <!-- Later, username of the place creator can be placed here if desired -->
 
     <% if place.comments.present? %>
       <div class="col-xs-12">
@@ -53,7 +53,7 @@
             <b><%= place.comments.last.humanized_rating %></b> -
           <% end %>
           <%= place.comments.last.message %>
-          <!-- NOTE: For user security, email will not be shown here -->
+          <small><%= place.comments.last.user.username %></small>
         </blockquote>
       </div>
     <% end %>

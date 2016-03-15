@@ -10,6 +10,9 @@ FactoryGirl.define do
     sequence :email do |n|
       "me#{n}@email.com"
     end
+    sequence :username do |n|
+      "#{n}name"
+    end
     password "password"
   end
 end
